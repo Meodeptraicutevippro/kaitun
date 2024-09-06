@@ -1,41 +1,77 @@
-Config =
-    Config or
-    {
-        ["Main"] = {},
-        ["Process"] = {
-            ["Force Staying In Second Sea Until Have Dark Fragments"] = true,
-            ["Soul Guitar Quest"] = true,
-            ["Cursed Dual Katana Quest"] = true,
-            ["Auto Fully Mirror Fragtal"] = true,
-            ["Purchase Hidden Sword"] = true,
-            ["Purchase Legend Haki Color"] = true,
-            ["Max Fragments To Raid"] = {2000, 7500}, -- just effect if player level isnt max / first arg: sea 2, sec arg: sea 3
-            ["Fruit Hop"] = {
-                ["Enable"] = true,
-                ["Delay Per Server"] = 60
-            }, 
-            ["Farm Mastery Fruit"] = true, 
-            ["Auto Get Blue Gear"] = true, 
-            ["Auto Afk Mirage Island When No Task Left For Blue Gear"] = true, 
-            ["Auto Shark Anchor"] = true
+getgenv().Setting = {
+
+    ["Team"] = "Pirates",
+
+    ["Chat"] = {},
+
+    ["Skip Race V4"] = true,
+
+    ["Misc"] = {
+
+        ["Enable Lock Bounty"] = false,
+
+        ["Lock Bounty"] = {0, 300000000},
+
+        ["Hide Health"] = {4500,5000},
+
+        ["Lock Camera"] = false,
+
+        ["Enable Cam Farm"] = false,
+
+        ["White Screen"] = false,
+
+        ["FPS Boost"] = false,
+
+        ["Bypass TP"] = true,
+
+        ["Random & Store Fruit"] = true
+
+    },
+
+    ["Item"] = {
+
+        ["Melee"] = {["Enable"] = true,
+
+            ["Z"] = {["Enable"] = true, ["Hold Time"] = 1.5},
+
+            ["X"] = {["Enable"] = true, ["Hold Time"] = 0.1},
+
+            ["C"] = {["Enable"] = true, ["Hold Time"] = 0.1}
+
         },
-        ["Demon Fruit"] = {
-            ["Sniping Fruit"] = {
-                "Dough-Dough"
-            }, --Fruit to snipe when it on stock
-            ["Only Eat Awakenable Fruit"] = true,
-            ["Lock Fruit"] = {"Kitsune-Kitsune"}
+
+        ["Blox Fruit"] = {["Enable"] = false,
+
+            ["Z"] = {["Enable"] = true, ["Hold Time"] = 1.5},
+
+            ["X"] = {["Enable"] = true, ["Hold Time"] = 0},
+
+            ["C"] = {["Enable"] = true, ["Hold Time"] = 0},
+
+            ["V"] = {["Enable"] = true, ["Hold Time"] = 0},
+
+            ["F"] = {["Enable"] = true, ["Hold Time"] = 0}
+
         },
-        ["Farming"] = {
-            ["Type Of Farming When Done All Tasks"] = "Custom Script", -- Custom Script / Nearby Farm /
-            ["Custom Script"] = "game:Shutdown()"
+
+        ["Sword"] = {["Enable"] = true,
+
+            ["Z"] = {["Enable"] = true, ["Hold Time"] = 0.1},
+
+            ["X"] = {["Enable"] = true, ["Hold Time"] = 0.1}
+
         },
-        ["Utilly"] = {
-            ["White Screen"] = false,
-            ["Auto Add Friends / Accept Requests"] = true,
-            ["Anti Flagging"] = true,
-            ["Auto Hop If There Are Nearby Player When Level Farming"] = true,
-            ["Enable Ui"] = true
+
+        ["Gun"] = {["Enable"] = false,
+
+            ["Z"] = {["Enable"] = false, ["Hold Time"] = 0.1},
+
+            ["X"] = {["Enable"] = false, ["Hold Time"] = 0.1}
+
         }
-    } 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/eltrul/toi-yeu-hentaivn/main/SwitchKaitun.lua"))()
+
+    }
+
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/daviduts1/rua-hub/main/auto%20bouty"))()
