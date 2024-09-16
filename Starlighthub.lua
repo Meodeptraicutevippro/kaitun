@@ -1,3 +1,7 @@
+getgenv().Hide_UI = true 
+getgenv().BlackScreen = true
+_G.HopFruit1M = false
+getgenv().AutoRejoin = true
 _G.KaitunConfig = {
     ["Actions Allowed"] = {
       ["Awakening Fruit"] = true,
@@ -39,13 +43,22 @@ _G.KaitunConfig = {
       ["Kitsune-Kitsune"] = true,
       ["Spring-Spring"] = true
     },
+    ['Auto Switch Melee'] = true,
     ["Player Nearing Hop"] = true,
     ["Allow Stored"] = true,
     ["Race Choosen"] = {
       ["Human"] = true
     },
+    ["Tushita Hopping"] = true,
+    ["Rip Indra Hopping"] = true,
+    ["Mirage Hopping"] = true,
     ["Race Snipping"] = true,
     ["Tween Speed"] = 350,
-    ["Same Y Tween"] = true
+    ["Same Y Tween"] = true,
 }
-loadstring(game:HttpGet('https://starlighthub.onrender.com/Kaitun.lua'))()
+repeat 
+  pcall(function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/memaybeohub/NewPage/main/Kaitun.lua'))()
+  end)
+  task.wait()
+until 1 < 0
